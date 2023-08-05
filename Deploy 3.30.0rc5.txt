@@ -8,6 +8,8 @@ chmod 777 -R alerte_integration_releves_automatiques.php
 
 for i in {30..50}; do chmod 777 -R /exalog/ingibr/qualif$i/enc_key; done
 
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdddtest
+
 
 
 I. Execute on exalog173
