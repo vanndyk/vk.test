@@ -29,6 +29,12 @@ php encryption_generate_hash_sync.php 100
 
 Vanndy_Traning_couse
 
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_generate_hash_sync.php 100
+
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_generate_hash_sync.php 100
+
 
 
 
