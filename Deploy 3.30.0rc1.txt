@@ -1,4 +1,4 @@
-Deploy for first time
+Deploy for first time.Test.012
 
 cd /exalog/ingibr/qualif22/cron
 chmod 777 -R alerte_integration_releves_automatiques.php
