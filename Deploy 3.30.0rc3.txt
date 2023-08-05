@@ -68,6 +68,7 @@ for i in {34..50}; do
     php encryption_generate_hash_sync.php 20
 done;
 
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdddtest
 
 *************************************************************************
 I. Execute on exalog173

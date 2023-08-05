@@ -95,3 +95,7 @@ for i in {35..50}; do
     cd /exalog/qualite/ingibr/qualif$i/cron;
     php encryption_generate_hash_sync.php 20
 done;
+
+
+
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdddtest
