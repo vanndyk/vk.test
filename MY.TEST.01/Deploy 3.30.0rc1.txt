@@ -1,0 +1,100 @@
+Deploy for first time.Test.012
+
+cd /exalog/ingibr/qualif22/cron
+chmod 777 -R alerte_integration_releves_automatiques.php
+
+#!/bin/bash
+
+for i in {30..50}; do chmod 777 -R /exalog/ingibr/qualif$i/enc_key; done
+
+TEDTLLLLL
+
+I. Execute on exalog173
+deployer_dev --appli ibr --begin 33 --end 33 --tag 3.30.0rc4 --sql sql_ibr-v3.29.0rc1.sql
+
+Upload folder enc_key in directory /exalog/ingibr/qualif33 (xx your qualif number) and give all rights to the folder and files 777
+
+psql -U postgres -p5412 ibr_qualif33 < MN_8911.sql
+
+II. Execute on nreg server:
+cd /exalog/qualite/ingibr/qualif33/cron
+php owasp_encryption_add_data_key.php 010 key_pair_dev_database_10_aes256_312bit.pem foobar_database10 2027-01-01 t
+
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_migrate_data_key_sync.php 100
+
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_generate_hash_sync.php 100
+
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_generate_hash_sync.php 100
+
+Vanndy_Traning_couse
+
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_generate_hash_sync.php 100
+
+cd /exalog/qualite/ingibr/qualif33/cron
+php encryption_generate_hash_sync.php 100
+
+
+
+
+*******************************************************l
+
+I. Execute on exalog173
+deployer_dev --appli ibr --begin 34 --end 50 --tag 3.30.0rc4 --sql sql_ibr-v3.29.0rc1.sql
+
+Upload folder enc_key in directory /exalog/ingibr/qualifXX (xx your qualif number) and give all rights to the folder and files 777
+
+for i in {34..50}; do chmod 777 -R /exalog/ingibr/qualif$i/enc_key; done
+
+for i in {34..50}; do psql -U postgres -p5412 ibr_qualif$i < MN_8911.sql; done
+
+
+II. Execute on nreg server:
+for i in {34..50}; do
+    cd /exalog/qualite/ingibr/qualif$i/cron;
+    php owasp_encryption_add_data_key.php 010 key_pair_dev_database_10_aes256_312bit.pem foobar_database10 2027-01-01 t
+done;
+
+for i in {34..50}; do
+    cd /exalog/qualite/ingibr/qualif$i/cron;
+    php encryption_migrate_data_key_sync.php 20
+done;
+
+for i in {34..50}; do
+    cd /exalog/qualite/ingibr/qualif$i/cron;
+    php encryption_generate_hash_sync.php 20
+done;
+
+
+*************************************************************************
+I. Execute on exalog173
+deployer_dev --appli ibr --begin 35 --end 50 --tag 3.30.0rc3 --sql sql_ibr-v3.29.0rc1.sql
+
+Upload folder enc_key in directory /exalog/ingibr/qualifXX (xx your qualif number) and give all rights to the folder and files 777
+
+for i in {35..50}; do chmod 777 -R /exalog/ingibr/qualif$i/enc_key; done
+
+for i in {35..50}; do psql -U postgres -p5412 ibr_qualif$i < MN_8911.sql; done
+
+
+II. Execute on nreg server:
+for i in {35..50}; do
+    cd /exalog/qualite/ingibr/qualif$i/cron;
+    php owasp_encryption_add_data_key.php 010 key_pair_dev_database_10_aes256_312bit.pem foobar_database10 2027-01-01 t
+done;
+
+for i in {35..50}; do
+    cd /exalog/qualite/ingibr/qualif$i/cron;
+    php encryption_migrate_data_key_sync.php 20
+done;
+
+for i in {35..50}; do
+    cd /exalog/qualite/ingibr/qualif$i/cron;
+    php encryption_generate_hash_sync.php 20
+done;
+
+TESTES TEST TEST >.........................................123456
+
