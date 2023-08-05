@@ -1,3 +1,5 @@
+YOu get error, please reploy
+
 cd /exalog/ingibr/qualif22/cron
 chmod 777 -R alerte_integration_releves_automatiques.php
 
